@@ -25,6 +25,6 @@ Berdasarkan latar belakang diatas, kita dapat membuat suatu solusi yaitu dengan 
 
 ## Alur Program
 <p align="center">
-    <img src="https://github.com/yogaaprilian/Super-Cashier/blob/fe34064e9426479902da4e0fa1895bdbe17c91fb/Flow%20Chart%20Project.png" width="540" height="960">
+    <img src="https://github.com/yogaaprilian/Super-Cashier/blob/fe34064e9426479902da4e0fa1895bdbe17c91fb/Flow%20Chart%20Project.png" width="500">
 </p>
 
