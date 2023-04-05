@@ -493,9 +493,6 @@ class Transaction():
         # Perintah untuk membuat clear terminal
         os.system('cls')
 
-        # Menampilkan daftar belanja yang telah diubah
-        self.list_item()
-
         # Menampilkan barang yang berhasil di hapus
         print(f"'{nama_barang}' berhasil dihapus!")
 
