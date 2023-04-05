@@ -28,7 +28,7 @@ Berdasarkan latar belakang diatas, kita dapat membuat suatu solusi yaitu dengan 
 ## Alur Program
 
 <p align="center">
-    <img src="https://github.com/yogaaprilian/Super-Cashier/blob/fe34064e9426479902da4e0fa1895bdbe17c91fb/Flow%20Chart%20Project.png" width="500">
+    <img src="https://user-images.githubusercontent.com/128567810/230075253-12365b6b-c4b5-4ddd-b49f-c377894a63e1.png" width="500">
 </p>
 
 Berdasarkan Diagram Alir, program tersebut akan berjalan seperti berikut:
