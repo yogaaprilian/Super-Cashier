@@ -55,7 +55,7 @@ Terdapat dua modul yang digunakan dalam program __Super Cashier__ yaitu:
 
 Dalam modul ini berisi program yang akan dijalankan ketika pengguna melakukan belanja menggunakan program __Super Cashier__. Dalam modul ini terdapat `Class Transaction` yang didalamnya terdapat beberapa method meliputi:
 
-#### Method `__init__()`
+#### 1. Method `__init__()`
 Merupakan _method_ yang digunakan untuk menginisialisasi suatu objek jika objek tersebut dibuat di _method_ lain. 
 
 Dalam _method_ ini memuat 
@@ -64,61 +64,61 @@ Dalam _method_ ini memuat
 
 https://github.com/yogaaprilian/Super-Cashier/blob/0cac923e6eb815a11963867192e308121c7db5da/super_cashier.py#L12-L67
 
-#### Method `add_item()`
+#### 2. Method `add_item()`
 Merupakan _method_ yang digunakan untuk menambahkan daftar belanja dengan memasuka nilai `nama_barang`, `jumlah_barang`, dan `harga_barang`
 
 https://github.com/yogaaprilian/Super-Cashier/blob/0cac923e6eb815a11963867192e308121c7db5da/super_cashier.py#L69-L167
 
-#### Method `list_item()`
+#### 3. Method `list_item()`
 Merupakan _method_ yang digunakan menampilkan daftar belanja ketika pengguna selesai melakukan transaksi.
 
 _Method_ ini akan dipanggil oleh _method_ lain didalam `Class Transaction()`
 
 https://github.com/yogaaprilian/Super-Cashier/blob/0cac923e6eb815a11963867192e308121c7db5da/super_cashier.py#L168-L188
 
-#### Method `update_item_name()`
+#### 4. Method `update_item_name()`
 _Method_ yang digunakan untuk mengubah nama barang jika terjadi kesalahan input nama atau pelanggan ingin mengganti nama barang.
 
 Pada _method_ ini pengguna diminta untuk memasukkan nama yang lama dan nama yang baru.
 
 https://github.com/yogaaprilian/Super-Cashier/blob/0cac923e6eb815a11963867192e308121c7db5da/super_cashier.py#L189-L267
 
-#### Method `update_item_qty()`
+#### 5. Method `update_item_qty()`
 _Method_ yang digunakan untuk mengubah jumlah barang jika terjadi kesalahan input jumlah barang dan pelanggan ingin mengubah jumlah barang tersebut
 
 Pada _method_ ini pengguna diminta untuk memasukkan nama yang ingin diubah dan jumlah yang baru.
 
 https://github.com/yogaaprilian/Super-Cashier/blob/0cac923e6eb815a11963867192e308121c7db5da/super_cashier.py#L268-L357
 
-#### Method `update_item_price()`
+#### 6. Method `update_item_price()`
 Merupakan _method_ yang digunakan untuk mengubah harga per barang jika terjadi kesalahan input harga barang dan pelanggan ingin mengubah jumlah barang tersebut.
 
 Pada _method_ ini pengguna diminta untuk memasukkan nama yang ingin diubah dan harga per barang yang baru.
 
 https://github.com/yogaaprilian/Super-Cashier/blob/0cac923e6eb815a11963867192e308121c7db5da/super_cashier.py#L358-L447
 
-#### Method `delete_item()`
+#### 7. Method `delete_item()`
 Merupakan _method_ yang dapat digunakan oleh pengguna untuk menghapus salah satu barang.
 
 Pada _method_ ini pengguna akan diminta untuk memasukkan nama barang yang akan dihapus.
 
 https://github.com/yogaaprilian/Super-Cashier/blob/0cac923e6eb815a11963867192e308121c7db5da/super_cashier.py#L448-L511
 
-#### Method `reset_transaction()`
+#### 8. Method `reset_transaction()`
 _Method_ ini digunakan untuk menghapus seluruh transaksi yang telah dilakukan.
 
 _Method_ ini juga dapat digunakan jika pengguna ingin membatalkan transaksi.
 
 https://github.com/yogaaprilian/Super-Cashier/blob/0cac923e6eb815a11963867192e308121c7db5da/super_cashier.py#L512-L550
 
-#### Method `check_order()`
+#### 9. Method `check_order()`
 _Method_ yang digunakan untuk melakukan pemeriksaan pada daftar belanja.
 
 Dikarenakan program __Super Cashier__ masih menggunakan sistem _self service_ yang dimana pengguna dapat melakukan kesalahan input. _Method_ ini akan membantu pengguna untuk memeriksa apakah semua yang telah dimasukkan dalam daftar belanja sudah benar atau belum.
 
 https://github.com/yogaaprilian/Super-Cashier/blob/0cac923e6eb815a11963867192e308121c7db5da/super_cashier.py#L552-L589
 
-#### Method `total_price()`
+#### 10. Method `total_price()`
 Jika pengguna telah selesai melakukan belanja, maka dapat menggunakan _method_ ini untuk menjumlahkan seluruh daftar belanja yang ada.
 
 _Method_ ini juga digunakan untuk menghitung apabila total harga belanja pengguna memenuhi kriteria akan mendapatkan potongan harga.
