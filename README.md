@@ -27,6 +27,7 @@ Berdasarkan latar belakang diatas, kita dapat membuat suatu solusi yaitu dengan 
 <p align="center">
     <img src="https://github.com/yogaaprilian/Super-Cashier/blob/fe34064e9426479902da4e0fa1895bdbe17c91fb/Flow%20Chart%20Project.png" width="500">
 </p>
+
 Berdasarkan Diagram Alir, program tersebut akan berjalan seperti berikut:
 - Ketika program di mulai, pelanggan yang akan melakukan kegiatan berbelanja harus membuat ID Transaksi yang berguna untuk menjelankan program selanjutnya. 
 - Menu akan ditampilkan, pelanggan akan memilih menu program apa yang akan dijalankan selanjutnya. 
