@@ -124,3 +124,9 @@ Jika pengguna telah selesai melakukan belanja, maka dapat menggunakan _method_ i
 _Method_ ini juga digunakan untuk menghitung apabila total harga belanja pengguna memenuhi kriteria akan mendapatkan potongan harga.
 
 https://github.com/yogaaprilian/Super-Cashier/blob/0cac923e6eb815a11963867192e308121c7db5da/super_cashier.py#L590-L670
+
+### Module `menu.py`
+
+## Hasil Test Case
+
+## Kesimpulan dan Saran
