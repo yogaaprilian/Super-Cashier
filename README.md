@@ -24,4 +24,5 @@ Berdasarkan latar belakang diatas, kita dapat membuat suatu solusi yaitu dengan 
     - Jika total harga belanja pelanggan __diatas Rp. 500.000__ maka pelanggan akan mendapatkan diskon __10%__.
 
 ## Alur Program
-![Flow Chart Project](https://github.com/yogaaprilian/Super-Cashier/blob/8feb303140b2d87e0fbe5fab1aa380bcbb51d1ca/Flow%20Chart%20Project%20100%25.png)
+![Flow Chart Project](https://github.com/yogaaprilian/Super-Cashier/blob/df3d8f6ca760563afce3eda959c26f3526a3ea03/Flow%20Chart%20Project.png)
+<img src="https://github.com/yogaaprilian/Super-Cashier/blob/df3d8f6ca760563afce3eda959c26f3526a3ea03/Flow%20Chart%20Project.png" alt="Flow Chart Project" width="500"/>
