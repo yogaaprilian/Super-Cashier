@@ -9,7 +9,7 @@ import super_cashier  # Untuk import kelas dan fungsi
 # Membuat clear terminal
 os.system("cls")
 # Dictionary untuk menyimpan ID transaksi
-ID_transaksi = {}
+ID_transaksi = []
 
 # Print header untuk menu input ID transaksi
 print("=======================\n",
@@ -28,8 +28,11 @@ while True:
 # Menampilkan bahwa pengguna berhasil membuat ID transaksi
 print(f"Berikut ID transaksi anda {transaksi_ID}, Selamat Berbelanja!\n")
 
-# ID transaksi akan disimpan dalam dictionar, dan menjadi instance variable
-ID_transaksi[transaksi_ID] = super_cashier.Transaction()
+# Menyimpan ID transaksi
+ID_transaksi.append(transaksi_ID)
+
+# instance variable untuk memanggil kelas transaksi
+cashier = super_cashier.Transaction(transaksi_ID)
 
 
 def tambah_barang():
@@ -38,7 +41,7 @@ def tambah_barang():
     os.system('cls')
 
     # Memanggil method Transaction.add_time()
-    ID_transaksi[transaksi_ID].add_item()
+    cashier.add_item()
 
     # Kembali ke menu belanja
     second_menu()
@@ -50,10 +53,10 @@ def ubah_nama():
     os.system('cls')
 
     # Memanggil method Transaction.list_item() menampilkan daftar belanja
-    ID_transaksi[transaksi_ID].list_item()
+    cashier.list_item()
 
     # Memanggil method untuk mengubah nama
-    ID_transaksi[transaksi_ID].update_item_name()
+    cashier.update_item_name()
 
     # Kembali ke menu edit belanja/transaksi
     modify_menu()
@@ -65,10 +68,10 @@ def ubah_jumlah():
     os.system('cls')
 
     # Memanggil method Transaction.list_item() menampilkan daftar belanja
-    ID_transaksi[transaksi_ID].list_item()
+    cashier.list_item()
 
     # Memanggil method untuk mengubah jumlah
-    ID_transaksi[transaksi_ID].update_item_qty()
+    cashier.update_item_qty()
 
     # Kembali ke menu edit belanja/transaksi
     modify_menu()
@@ -80,10 +83,10 @@ def ubah_harga():
     os.system('cls')
 
     # Memanggil method Transaction.list_item() menampilkan daftar belanja
-    ID_transaksi[transaksi_ID].list_item()
+    cashier.list_item()
 
     # Memanggil method untuk mengubah harga
-    ID_transaksi[transaksi_ID].update_item_price()
+    cashier.update_item_price()
 
     # Kembali ke menu edit belanja/transaksi
     modify_menu()
@@ -95,10 +98,10 @@ def hapus_barang():
     os.system('cls')
 
     # Memanggil method Transaction.list_item() menampilkan daftar belanja
-    ID_transaksi[transaksi_ID].list_item()
+    cashier.list_item()
 
     # Memanggil method untuk menghapus barang
-    ID_transaksi[transaksi_ID].delete_item()
+    cashier.delete_item()
 
     # Kembali ke menu edit belanja/transaksi
     modify_menu()
@@ -110,7 +113,7 @@ def reset_belanja():
     os.system('cls')
 
     # Memanggil method untuk menghapus seluruh barang
-    ID_transaksi[transaksi_ID].reset_transaction()
+    cashier.reset_transaction()
 
     # Kembali ke menu belanja
     main_menu()
@@ -122,7 +125,7 @@ def periksa_belanja():
     os.system('cls')
 
     # Memanggil method untuk mengecek seluruh daftar belanja
-    ID_transaksi[transaksi_ID].check_order()
+    cashier.check_order()
 
     # Kembali ke menu belanja
     second_menu()
@@ -134,7 +137,7 @@ def bayar():
     os.system('cls')
 
     # Memanggil method untuk melakukan pembayaran dan melihat total harga
-    ID_transaksi[transaksi_ID].total_price()
+    cashier.total_price()
 
     # Kembali ke menu utama
     main_menu()
