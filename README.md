@@ -53,7 +53,12 @@ Terdapat dua modul yang digunakan dalam program __Super Cashier__ yaitu:
 
 ### Module `Super_Cashier.py`
 
-Dalam modul ini berisi program yang akan dijalankan ketika pengguna melakukan belanja menggunakan program __Super Cashier__. Dalam modul ini terdapat `Class Transaction` yang didalamnya terdapat beberapa method meliputi:
+Dalam modul ini berisi program yang akan dijalankan ketika pengguna melakukan belanja menggunakan program __Super Cashier__. Dalam module ini mengunakan _library_ dari bahasa pemograman python yaitu:
+
+1. `Python os Module` yang digunakan untuk membantu _clear_ terminal ketika program dijalankan
+2. `Python tabulate Module` yang digunakan untuk membuat table ketika menampilkan daftar belanja atau melakukan pembayaran.
+
+Dalam modul ini terdapat `Class Transaction` yang didalamnya terdapat beberapa method meliputi:
 
 #### 1. Method `__init__()`
 Merupakan _method_ yang digunakan untuk menginisialisasi suatu objek jika objek tersebut dibuat di _method_ lain. 
