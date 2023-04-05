@@ -1,7 +1,6 @@
 # Python Project: Super-Cashier
 
 ## Latar Belakang Project:
-<p style="text-align:justify;">
 __Super Cashier__ merupakan suatu program sederhana yang dapat digunakan para pelanggan untuk melakukan transaksi belanja pada suatu supermarket. Program ini menggunakan bahasa pemrograman `Python` yang dijalankan sesuai fungsi dasar mesin kasir sehingga para pelanggan dapat melakukan proses belanja secara mandiri atau _self-service_.
 
 
@@ -44,5 +43,4 @@ Berdasarkan Diagram Alir, program tersebut akan berjalan seperti berikut:
 - Setelah melakukan pengecekkan, program akan melakukan penampilan harga total. Pelanggaan dapat mengecek kembali apakah masih ada barang yang ingin di perbaharui atau tidak.
 - Jika maka proses akan dilanjutkan ke tahap pembayaran
     - Pelanggan akan mendapatkan harga diskon apalagi total dari seluruh harga memenuhi kriteria mendapatkan diskon.
-</p>
 
