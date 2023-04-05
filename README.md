@@ -1,6 +1,6 @@
 # Python Project: Super-Cashier
 
-## Latar Belakang Project:
+## Latar Belakang _Project_:
 
 __Super Cashier__ merupakan suatu program sederhana yang dapat digunakan para pelanggan untuk melakukan transaksi belanja pada suatu supermarket. Program ini menggunakan bahasa pemrograman `Python` yang dijalankan sesuai fungsi dasar mesin kasir sehingga para pelanggan dapat melakukan proses belanja secara mandiri atau _self-service_.
 
@@ -10,7 +10,7 @@ Program ini dibuat dengan mempertimbangkan beberapa hal:
 2. Ada beberapa pelanggan yang tidak berada di kota tempat supermarket itu berada, sehingga perlu adanya program dengan fitur fitur yang membantu menyelesaikan masalah tersebut.
 3. Sehingga perlu dibuatnya suatu program yang dimana pelanggan dapat bisa langsung memasukkan item yang dibeli, jumlah item yang dieli, dan harga item yang dibeli serta fitur yang lain dengan harapan dapat menjangkau lebih banyak costumer serta meningkatkan kepuasan pelanggan dalam berbelanja di supermarket tersebut.
 
-## Feature Requirements:
+## _Feature Requirements_:
 
 Berdasarkan latar belakang diatas, kita dapat membuat suatu solusi yaitu dengan membuat program yaitu __Super Cashier__. Dimana dalam program kasir mempunyai beberapa fitur permintaan yang di inginkan seperti:
 - Pelanggan dapat melakukan belanja dengan memanggil `Class Transaction()`.
@@ -28,8 +28,9 @@ Berdasarkan latar belakang diatas, kita dapat membuat suatu solusi yaitu dengan 
 ## Alur Program
 
 <p align="center">
-    <img src="https://user-images.githubusercontent.com/128567810/230075253-12365b6b-c4b5-4ddd-b49f-c377894a63e1.png" width="500">
+    <img src="https://user-images.githubusercontent.com/128567810/230119316-54c4466e-0f42-48ab-8755-50e53f818417.png" width="500">
 </p>
+
 
 Berdasarkan Diagram Alir, program tersebut akan berjalan seperti berikut:
 1. Ketika program di mulai, pelanggan yang akan melakukan kegiatan berbelanja harus membuat ID Transaksi yang berguna untuk menjelankan program selanjutnya. 
@@ -193,4 +194,60 @@ https://github.com/yogaaprilian/Super-Cashier/blob/db14283039646d9af4c535f0fef41
 
 ## Hasil Test Case
 
-Ada beberapa
+Ada beberapa test yang dilakukan untuk menguji apakah program __Super Cashier__ ini dapat dijalankan atau tidak.
+
+Test Case ini dilakukan di `Jupyter Notebook` dengan beberapa kasus yang meliputi:
+
+### Test Case 1
+
+Pengguna ingin menambahkan dua barang baru menggunakan _method_ `add_item()`. Barang yang ditambahkan sebagai berikut:
+- Nama Barang: Ayam Goreng, Jumlah: 2, Harga: 20_0000
+- Nama Barang: Pasta Gigi, Jumlah: 3, Harga: 15_000
+
+Dari program `Super Cashier` dihasilkan output:
+
+```python
+trnsct_123 = Transaction(1234567)
+
+trnsct_123.add_item()
+```
+![Test Case 1](https://user-images.githubusercontent.com/128567810/230119126-c44d5320-9da4-4819-ab5f-d6e259cbeebc.png)
+
+
+### Test Case 2
+
+Ada keadaan dimana pengguna salah membeli salah satu barang dari belanjaan yang telah ditambahkan, maka pengguna menggunakan _method_ `delete_item()` untuk menghapus item. Item yang ingin dihapuskan adalah __Pasta Gigi__
+
+Dari program `Super Cashier` dihasilkan output:
+
+```python
+trnsct_123.delete_item()
+```
+![Test Case 2](https://user-images.githubusercontent.com/128567810/230119167-0c026116-a446-4d23-8b20-1bcc50aee026.png)
+
+
+
+### Test Case 3
+
+Ternyata setelah dipikir - pikir pengguna salah memasukkan item yang ingin dibelanjakan! Daripada menghapus satu - satu, maka pengguna cukup menggunakan method `reset_transaction()` untuk menghapus semua item yang sudah ditambahkan.
+
+Dari program `Super Cashier` dihasilkan output:
+
+```python
+trnsct_123.delete_item()
+```
+![Test Case 3](https://user-images.githubusercontent.com/128567810/230119211-3f7efbd8-8d86-4e81-9f09-02bda4f60950.png)
+
+
+### Test Case 4
+
+Setelah pengguna selesai berbelanja, pengguna akan menghitung total belanja yang harus digunakan menggunakan _method_ `total_price()`. Sebelum mengeluarkan output total belanja akan menampilkan barang-barang yang dibeli.
+
+Dari program `Super Cashier` dihasilkan output:
+
+```python
+trnsct_321.total_price()
+```
+![Test Case 4](https://user-images.githubusercontent.com/128567810/230119248-739eb53c-3f6d-475e-b5b8-71a90cc93eb3.png)
+
+## Kesimpulan
