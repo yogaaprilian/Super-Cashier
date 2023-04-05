@@ -9,7 +9,7 @@ Program ini dibuat dengan mempertimbangkan beberapa hal:
 2. Ada beberapa pelanggan yang tidak berada di kota tempat supermarket itu berada, sehingga perlu adanya program dengan fitur fitur yang membantu menyelesaikan masalah tersebut.
 3. Sehingga perlu dibuatnya suatu program yang dimana pelanggan dapat bisa langsung memasukkan item yang dibeli, jumlah item yang dieli, dan harga item yang dibeli serta fitur yang lain dengan harapan dapat menjangkau lebih banyak costumer serta meningkatkan kepuasan pelanggan dalam berbelanja di supermarket tersebut.
 
-## Feature Requirements:
+## Fitur dan Kebutuhan:
 Berdasarkan latar belakang diatas, kita dapat membuat suatu solusi yaitu dengan membuat program yaitu __Super Cashier__. Dimana dalam program kasir mempunyai beberapa fitur permintaan yang di inginkan seperti:
 - Pelanggan dapat melakukan belanja dengan memanggil `Class Transaction()`.
 - Pelanggan dapat `menambahkan barang` belanjaan ke dalam memasukkan nama barang, jumlah barang, dan harga barang.
@@ -22,3 +22,6 @@ Berdasarkan latar belakang diatas, kita dapat membuat suatu solusi yaitu dengan 
     - Jika total harga belanja pelanggan __diatas Rp. 200.000__ maka pelanggan akan mendapatkan diskon __5%__.
     - Jika total harga belanja pelanggan __diatas Rp. 300.000 maka__ pelanggan akan mendapatkan diskon __8%__.
     - Jika total harga belanja pelanggan __diatas Rp. 500.000__ maka pelanggan akan mendapatkan diskon __10%__.
+
+## Alur Program
+![Flow Chart Program](Flow Chart Project.png)
