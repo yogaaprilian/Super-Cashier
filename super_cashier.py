@@ -20,6 +20,8 @@ class Transaction():
 
         total_harga_belanja (int) : Total harga dari semua barang yang telah dibeli.
 
+        id_transaksi (int) : objek yang digunakan untuk memanggil klass transaksi
+
     Methods:
     --------
     add_item()
@@ -56,7 +58,7 @@ class Transaction():
 
     """
 
-    def __init__(self):
+    def __init__(self, id_transaksi):
         """
         Inisialisasi objek pada kelas Transaction.
         """
@@ -65,6 +67,9 @@ class Transaction():
 
         # Counter yang digunakan untuk mengitung total harga belanja
         self.total_harga_belanja = 0
+
+        # digunakan untuk memanggil kelas transaksi
+        self.id_transaksi = id_transaksi
 
     def add_item(self):
         """
@@ -537,6 +542,9 @@ class Transaction():
             if konfirmasi == "ya":
                 # Perintah menghapus seluruh data dalam daftar belanja
                 self.daftar_belanja.clear()
+
+                # clear terminal
+                os.system('cls')
 
                 # Menampilkan proses penghapusan seluruh barang berhasil
                 print("Semua barang dalam daftar belanja telah dihapus!")
