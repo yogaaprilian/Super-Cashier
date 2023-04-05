@@ -85,28 +85,28 @@ https://github.com/yogaaprilian/Super-Cashier/blob/c00a8d7eca721cbd3b95bd6bf801a
 #### 4. Method `update_item_name()`
 _Method_ yang digunakan untuk mengubah nama barang jika terjadi kesalahan input nama atau pelanggan ingin mengganti nama barang.
 
-Pada _method_ ini pengguna diminta untuk memasukkan nama yang lama dan nama yang baru.
+Pada _method_ ini pengguna diminta untuk memasukkan    `nama_barang` yang lama dan `nama_barang_baru`.
 
 https://github.com/yogaaprilian/Super-Cashier/blob/c00a8d7eca721cbd3b95bd6bf801ae686c34188a/super_cashier.py#L194-L272
 
 #### 5. Method `update_item_qty()`
 _Method_ yang digunakan untuk mengubah jumlah barang jika terjadi kesalahan input jumlah barang dan pelanggan ingin mengubah jumlah barang tersebut
 
-Pada _method_ ini pengguna diminta untuk memasukkan nama yang ingin diubah dan jumlah yang baru.
+Pada _method_ ini pengguna diminta untuk memasukkan `nama_barang` yang ingin diubah dan `jumlah_barang_baru`.
 
 https://github.com/yogaaprilian/Super-Cashier/blob/c00a8d7eca721cbd3b95bd6bf801ae686c34188a/super_cashier.py#L273-L362
 
 #### 6. Method `update_item_price()`
 Merupakan _method_ yang digunakan untuk mengubah harga per barang jika terjadi kesalahan input harga barang dan pelanggan ingin mengubah jumlah barang tersebut.
 
-Pada _method_ ini pengguna diminta untuk memasukkan nama yang ingin diubah dan harga per barang yang baru.
+Pada _method_ ini pengguna diminta untuk memasukkan `nama_barang` yang ingin diubah dan `harga_barang_baru`.
 
 https://github.com/yogaaprilian/Super-Cashier/blob/c00a8d7eca721cbd3b95bd6bf801ae686c34188a/super_cashier.py#L363-L452
 
 #### 7. Method `delete_item()`
 Merupakan _method_ yang dapat digunakan oleh pengguna untuk menghapus salah satu barang.
 
-Pada _method_ ini pengguna akan diminta untuk memasukkan nama barang yang akan dihapus.
+Pada _method_ ini pengguna akan diminta untuk memasukkan `nama_barang` yang akan dihapus.
 
 https://github.com/yogaaprilian/Super-Cashier/blob/c00a8d7eca721cbd3b95bd6bf801ae686c34188a/super_cashier.py#L453-L516
 
@@ -133,6 +133,64 @@ https://github.com/yogaaprilian/Super-Cashier/blob/c00a8d7eca721cbd3b95bd6bf801a
 
 ### Module `menu.py`
 
+Modul ini merupakan modul yang berisi __Menu Program__ yang membantu pengguna untuk menjalankan __Super Cashier__ agar lebiih mudah untuk dijalankan.
+
+Dalam modul ini menggunakan beberapa _library_ `os` yang ada pada `python`. _library_ ini digunakan untuk memberishkan terminal sesudah atau sebelum pelanggan melakukan kegiatan berbelanja.
+
+Selain itu, dalam module `menu.py` ini, meng-import module `super_cashier.py` untuk dapat menjalankan programnya.
+
+Di dalam `module.py` terdapat kode program dan fungsi meliputi:
+
+#### 1. Input `ID Transaksi`
+
+Bagian pemograman ini digunakan untuk memanggil `class Transaction()` untuk bisa dijalankan pada module ini. 
+
+Pengguna akan memasukkan `ID Transaksi` yang berupa `angka (int)` yang nantinya angka tersebut akan dimasukkan kedalam _instance_ variabel dan menjadi atribut objek untuk memanggil `class Transaction()`.
+
+`cashier = super_cashier.Transaction(transaksi_ID)`
+
+Berikut merupakan program yang digunakan dalam bagian ini:
+
+https://github.com/yogaaprilian/Super-Cashier/blob/db14283039646d9af4c535f0fef41e36aec0c8be/menu.py#L8-L36
+
+#### 2. Pemanggil Method `class Transaction()`
+
+Pemograman yang berada pada bagian ini berisi fungsi-fungsi yang nantinya akan dipilih pada bagian fungsi `second_menu()` dan `modify_menu()`. 
+
+Fungsi tersebut digunakan nantinya apabila dipilih oleh pengguna. Total ada sembilan fungsi yang nantinya digunakan untuk memanggil _method_ yang ada pada `class Transaction()`.
+
+https://github.com/yogaaprilian/Super-Cashier/blob/db14283039646d9af4c535f0fef41e36aec0c8be/menu.py#L37-L172
+
+#### 3. Menu Edit Belanja `modify_menu()`
+
+Fungsi ini merupakan fungsi yang berisi beberapa pilihan menu yang digunakan untuk melakukan perubahan pada barang yang dibeli.
+
+Ketika pelanggan merasa ada yang perlu diubah, maka dapat menggunakan menu ini.
+
+Dalam fungsi ini terdapat enam menu yang dimana setiap nomor tersebut dapat memanggil _method_ tertentu.
+
+https://github.com/yogaaprilian/Super-Cashier/blob/db14283039646d9af4c535f0fef41e36aec0c8be/menu.py#L174-L218
+
+#### 4. Menu Belanja `second_menu()`
+
+Berbeda dari fungsi `modify_menu()`, fungsi ini digunakan untuk pengguna melakukan transaksi belanja.
+
+Menu ini berisi lima menu yang dimana dari setiap menunya akan memanggil fungsi yang lain yang ada pada modul `main.py`.
+
+https://github.com/yogaaprilian/Super-Cashier/blob/db14283039646d9af4c535f0fef41e36aec0c8be/menu.py#L220-L261
+
+#### 5. Menu Utama `main_menu()`
+
+Menu yang muncul pertama kali setelah pengguna memasukkan ID transaksi yang dimana merukan menu utama.
+
+Menu ini hanya berisi dua pilihan menu yaitu 
+- `1. Belanja` yang akan langsung masuk ke fungsi `second_menu()` untuk melakukan belanja 
+- `2. Keluar` yang akan memanggil fungsi `keluar()` ketika pelanggan ingin keluar dari program __Super Cashier__.
+
+Selain ini diakhir dan diluar fungsi ini, fungsi ini dipanggil, untuk dapat memulai program setelah `ID Transaski` dibuat.
+
+https://github.com/yogaaprilian/Super-Cashier/blob/db14283039646d9af4c535f0fef41e36aec0c8be/menu.py#L262-L298
+
 ## Hasil Test Case
 
-## Kesimpulan dan Saran
+Ada beberapa
