@@ -27,4 +27,20 @@ Berdasarkan latar belakang diatas, kita dapat membuat suatu solusi yaitu dengan 
 <p align="center">
     <img src="https://github.com/yogaaprilian/Super-Cashier/blob/fe34064e9426479902da4e0fa1895bdbe17c91fb/Flow%20Chart%20Project.png" width="500">
 </p>
+Berdasarkan Diagram Alir, program tersebut akan berjalan seperti berikut:
+- Ketika program di mulai, pelanggan yang akan melakukan kegiatan berbelanja harus membuat ID Transaksi yang berguna untuk menjelankan program selanjutnya. 
+- Menu akan ditampilkan, pelanggan akan memilih menu program apa yang akan dijalankan selanjutnya. 
+- Pelanggan akan menambahkan barang yang akan dibeli dengan memasukkan nama barang, jumlah barang, dan harga barang yang akan dibeli.
+    - Jika ingin menambahkan barang lagi, pelanggan dapat memiliih ‘Ya’.
+- Setelah melakukan penambahan barang yang dibeli, program akan menampilkan daftar belanjaan yang telah ditambahkan berserta total belanjaanya.
+- Pelanggan dapat melakukan pengecekkan daftar belanja.
+    - Jika tidak terdapat kesalahan input, maka pelanggan dapat memilih ‘Tidak’
+    - Jika ‘Ya’ dari tampilan daftar belanja terdapat kesalahan, maka pelanggan dapat memperbaharui nama/harga/jumlah/yang telah ditambahkan.
+- Selain itu, pelanggan dapat melakukan pengapusan barang yang telah di tambahkan dengan pilihan:
+    - Menghapus salah satu barang atau lebih barang yang telah ditambahkan.
+    - Melakukan pengapusan semua barang ada di daftar belanja, jika ingin membatalkan kegiatan belanja.
+- Setelah melakukan pengecekkan, program akan melakukan penampilan harga total. Pelanggaan dapat mengecek kembali apakah masih ada barang yang ingin di perbaharui atau tidak.
+- Jika maka proses akan dilanjutkan ke tahap pembayaran
+    - Pelanggan akan mendapatkan harga diskon apalagi total dari seluruh harga memenuhi kriteria mendapatkan diskon. 
+
 
