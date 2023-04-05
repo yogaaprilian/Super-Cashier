@@ -211,8 +211,7 @@ trnsct_123 = Transaction(1234567)
 
 trnsct_123.add_item()
 ```
-![Test Case 1](https://user-images.githubusercontent.com/128567810/230119126-c44d5320-9da4-4819-ab5f-d6e259cbeebc.png)
-
+![Test Case 1](https://user-images.githubusercontent.com/128567810/230122201-baa8e650-4dd3-482e-b30b-1f77ca92349c.png)
 
 ### Test Case 2
 
@@ -223,9 +222,7 @@ Dari program `Super Cashier` dihasilkan output:
 ```python
 trnsct_123.delete_item()
 ```
-![Test Case 2](https://user-images.githubusercontent.com/128567810/230119167-0c026116-a446-4d23-8b20-1bcc50aee026.png)
-
-
+![Test Case 2](https://user-images.githubusercontent.com/128567810/230122259-d3e5a055-0ed6-4b8c-8f5b-b2d194ecd389.png)
 
 ### Test Case 3
 
@@ -237,7 +234,6 @@ Dari program `Super Cashier` dihasilkan output:
 trnsct_123.delete_item()
 ```
 ![Test Case 3](https://user-images.githubusercontent.com/128567810/230119211-3f7efbd8-8d86-4e81-9f09-02bda4f60950.png)
-
 
 ### Test Case 4
 
