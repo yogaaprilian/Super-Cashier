@@ -280,7 +280,7 @@ Proyek _Super Cashier_ juga dibuat dengan tampilan yang mudah digunakan oleh pen
 ## _Future Works_
 
 Ada beberapa kemungkinan yang dapat dikembangkan dari program _Super Cashier_ kedepannya, meliputi:
-1. Peningkatan antar muka pengguna. Menambahkan fitur seperti antarmuka yang lebih ramah pengguna atau lebih interaktif dapat meningkatkan pengalaman pengguna dan memudahkan mereka dalam menggunakan aplikasi.
+1. Peningkatan antar muka pengguna: Menambahkan fitur seperti antarmuka yang lebih ramah pengguna atau lebih interaktif dapat meningkatkan pengalaman pengguna dan memudahkan mereka dalam menggunakan aplikasi.
 2. Walaupun program ini bersifat sederhana, menu pembayaran dapat dikembangkan, dengan pengguna dapat memasukan pembayaran baik itu berupa cash, kartu kredit, ataupun e-wallet. Sehingga akan membuat aplikasi lebih fleksibel dan memudahkan pelanggan untuk dapat melakukan pembayaran.
-3. Karena ini merupakan sistem belanja. Perlu ditambahkan fitur yang mengatur tentang __stok barang__ sehingga adanya pembaharuan ketika barang itu terjual ataupun memperingatkan ketika stock barang yang dibeli oleh pelanggan akan habis.
-4. Untuk memudahkan pemilik supermarket mendata laporan penjualan. Dibutuhkan fitu laporan penjualan, dimana fitur ini akan menghasilakan laporan penjualan dari barang yang telah di beli oleh para pelanggan. Sehingga akan membantu pemilik supermarket untuk membuat keputusan yang lebih baik untuk meningkatkan keuntungan supermarket.
+3. Karena ini merupakan sistem belanja. Perlu ditambahkan fitur yang mengatur tentang __Stok Barang__ sehingga adanya pembaharuan ketika barang itu terjual ataupun memperingatkan ketika stock barang yang dibeli oleh pelanggan akan habis.
+4. Untuk memudahkan pemilik supermarket mendata laporan penjualan. Dibutuhkan fitur __Laporan Penjualan__, dimana fitur ini akan menghasilakan laporan penjualan dari barang yang telah di beli oleh para pelanggan. Sehingga akan membantu pemilik supermarket untuk membuat keputusan yang lebih baik untuk meningkatkan keuntungan supermarket.
