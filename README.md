@@ -266,3 +266,21 @@ trnsct_321.total_price()
 ![Test Case 4](https://user-images.githubusercontent.com/128567810/230119248-739eb53c-3f6d-475e-b5b8-71a90cc93eb3.png)
 
 ## Kesimpulan
+
+Dari program yang telah dibuat, proyek _Super Cashier_ dapat membantu pengguna dalam melakukan aktifitas berbelanja tanpa harus datang ke supermarket. Selain itu, program ini dapat mengurangi antrian pembayaran yang ada di tempat berbelanja karena para pelanggan/pengguna dapat langsung melakukan pembayaran melalui program ini tanpa harus membayar dikasir.
+
+Program _Super Cashier_ memiliki beberapa fitur utama yaitu:
+1. Pengguna program ini dapat memasukkan nama, jumlah, dan harga barang ke daftar belanja.
+2. Pengguna dapat mengubah daftar belanja dan juga dapat menghapus atau membatalkan transaksi jika terjadi kesalahan ketika penginputan barang.
+3. Setelah melakukan kegiatan berbelanja, pengguna juga dapat melakukan pemeriksaan pada dafatar belanja untuk memastikan semua barang ditambahkan sudah benar.
+4. Setelah berbelanja, pengguna dapat melakukan pembayaran dimana pembayaran otomatis langsung menghitung potongan harga yang didapatkan oleh pelanggan.
+
+Proyek _Super Cashier_ juga dibuat dengan tampilan yang mudah digunakan oleh pengguna. Sehingga _Super Cashier_ ini merupakan contoh aplikasi kasir sederhana yang bisa dikembangkan dan disesuaikan dengan kebutuhan bisnis.
+
+## _Future Works_
+
+Ada beberapa kemungkinan yang dapat dikembangkan dari program _Super Cashier_ kedepannya, meliputi:
+1. Peningkatan antar muka pengguna. Menambahkan fitur seperti antarmuka yang lebih ramah pengguna atau lebih interaktif dapat meningkatkan pengalaman pengguna dan memudahkan mereka dalam menggunakan aplikasi.
+2. Walaupun program ini bersifat sederhana, menu pembayaran dapat dikembangkan, dengan pengguna dapat memasukan pembayaran baik itu berupa cash, kartu kredit, ataupun e-wallet. Sehingga akan membuat aplikasi lebih fleksibel dan memudahkan pelanggan untuk dapat melakukan pembayaran.
+3. Karena ini merupakan sistem belanja. Perlu ditambahkan fitur yang mengatur tentang __stok barang__ sehingga adanya pembaharuan ketika barang itu terjual ataupun memperingatkan ketika stock barang yang dibeli oleh pelanggan akan habis.
+4. Untuk memudahkan pemilik supermarket mendata laporan penjualan. Dibutuhkan fitu laporan penjualan, dimana fitur ini akan menghasilakan laporan penjualan dari barang yang telah di beli oleh para pelanggan. Sehingga akan membantu pemilik supermarket untuk membuat keputusan yang lebih baik untuk meningkatkan keuntungan supermarket.
