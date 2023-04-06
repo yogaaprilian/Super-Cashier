@@ -4,10 +4,20 @@ menu yang digunakan untuk pengguna lebih mudah melakukan transaksi belanja.
 """
 
 import os  # Untuk menjalankan perintah clear terminal
+from IPython.display import clear_output
+from IPython import get_ipython
 import super_cashier  # Untuk import kelas dan fungsi
 
-# Membuat clear terminal
-os.system("cls")
+
+# Jika program dijalankan di Jupyter Notebook
+if get_ipython() is not None:
+    # output akan dihapus ketika output baru dihasilkan
+    clear_output(wait=True)
+
+# Jika program dijalankan di terminal atau konsol
+else:
+    os.system('cls' if os.name == 'nt' else 'clear')
+
 # Dictionary untuk menyimpan ID transaksi
 ID_transaksi = []
 
@@ -38,7 +48,7 @@ cashier = super_cashier.Transaction(transaksi_ID)
 def tambah_barang():
     """Fungsi yang digunakan untuk memanggil method add_item()"""
     # Membersihkan terminal
-    os.system('cls')
+    cashier.clear_screen()
 
     # Memanggil method Transaction.add_time()
     cashier.add_item()
@@ -50,7 +60,7 @@ def tambah_barang():
 def ubah_nama():
     """Fungsi yang digunakan untuk memanggil method update_item_name()"""
     # Membersihkan terminal
-    os.system('cls')
+    cashier.clear_screen()
 
     # Memanggil method Transaction.list_item() menampilkan daftar belanja
     cashier.list_item()
@@ -65,7 +75,7 @@ def ubah_nama():
 def ubah_jumlah():
     """Fungsi yang digunakan untuk memanggil method updat_item_qty()"""
     # Membersihkan terminal
-    os.system('cls')
+    cashier.clear_screen()
 
     # Memanggil method Transaction.list_item() menampilkan daftar belanja
     cashier.list_item()
@@ -80,7 +90,7 @@ def ubah_jumlah():
 def ubah_harga():
     """Fungsi yang digunakan untuk memanggil method updat_item_price()"""
     # Membersihkan terminal
-    os.system('cls')
+    cashier.clear_screen()
 
     # Memanggil method Transaction.list_item() menampilkan daftar belanja
     cashier.list_item()
@@ -95,7 +105,7 @@ def ubah_harga():
 def hapus_barang():
     """Fungsi ini digunakan untuk memanggil method delete_item()"""
     # Membersihkan terminal
-    os.system('cls')
+    cashier.clear_screen()
 
     # Memanggil method Transaction.list_item() menampilkan daftar belanja
     cashier.list_item()
@@ -110,7 +120,7 @@ def hapus_barang():
 def reset_belanja():
     """Fungsi ini digunakan untuk memanggil method reset_transaction()"""
     # Membersihkan terminal
-    os.system('cls')
+    cashier.clear_screen()
 
     # Memanggil method untuk menghapus seluruh barang
     cashier.reset_transaction()
@@ -122,7 +132,7 @@ def reset_belanja():
 def periksa_belanja():
     """ Fungsi ini digunakan untuk memanggil method check_order()"""
     # Membersihkan terminal
-    os.system('cls')
+    cashier.clear_screen()
 
     # Memanggil method untuk mengecek seluruh daftar belanja
     cashier.check_order()
@@ -134,7 +144,7 @@ def periksa_belanja():
 def bayar():
     """Fungsi ini digunakan untuk memanggil method total_price()"""
     # Membersihkan terminal
-    os.system('cls')
+    cashier.clear_screen()
 
     # Memanggil method untuk melakukan pembayaran dan melihat total harga
     cashier.total_price()
@@ -146,7 +156,7 @@ def bayar():
 def keluar():
     """Fungsi yang digunakan jika pelanggan keluar dari transaksi"""
 
-    os.system('cls')
+    cashier.clear_screen()
 
     # Menanyakan apakah pengguna yakin untuk keluar
     while True:
@@ -163,7 +173,7 @@ def keluar():
             continue
 
     # Clear Terminal
-    os.system('cls')
+    cashier.clear_screen()
 
     # Menampilkan pesan terima kasih
     print("============================================\n")
