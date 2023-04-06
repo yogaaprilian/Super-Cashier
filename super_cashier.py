@@ -6,6 +6,8 @@ Module ini akan di import ke module menu.py
 """
 
 import os  # Untuk menjalankan perintah clear terminal
+from IPython.display import clear_output
+from IPython import get_ipython
 from tabulate import tabulate  # Untuk membuat format tabel
 
 
@@ -30,6 +32,10 @@ class Transaction():
     list_item()
         Menampilkan daftar belanja setiap method lain dilakukan.
         Digunakan untuk pengecekkan barang awal.
+
+    clear_screen()
+        Memebersihkan terminal atau output di notebook, agar pengelaman
+        belanja pengguna lebih nyaman.
 
     update_item_name()
         Mengganti nama barang pada daftar belanja.
@@ -159,11 +165,11 @@ class Transaction():
             tambah_barang = input(
                 "Apakah ingin menambahkan barang lagi? (Ya/Tidak)").lower()
             if tambah_barang == "ya":
-                os.system('cls')
+                self.clear_screen()
                 self.add_item()  # Kembali ke fungsi awal
                 break
             if tambah_barang == "tidak":
-                os.system('cls')  # Perintah untuk membuat clear terminal
+                self.clear_screen()  # Perintah untuk membuat clear terminal
                 self.list_item()
                 break
             else:
@@ -190,6 +196,27 @@ class Transaction():
         print("\n+---------------+")
         print("| Daftar Belanja:")
         print(tabulate(table_data, headers=headers, tablefmt="grid"))
+
+    def clear_screen(self):
+        """
+        Method ini merupakan method yang dapat dipanggil untuk membersihkan 
+        terminal atau output pada notebook.
+
+        Method ini akan membantu pengguna agar merasa lebih nyaman dalam 
+        berbelanja.
+
+        Method akan menyesuaikan apabila program dijalankan di windows atau 
+        os lain, dan dapat menyesuaikan program dijalankan di notebook atau
+        di terminal atau konsol.
+        """
+        # Jika program dijalankan di Jupyter Notebook
+        if get_ipython() is not None:
+            # output akan dihapus ketika output baru dihasilkan
+            clear_output(wait=True)
+
+        # Jika program dijalankan di terminal atau konsol
+        else:
+            os.system('cls' if os.name == 'nt' else 'clear')
 
     def update_item_name(self):
         """
@@ -246,7 +273,7 @@ class Transaction():
             nama_barang)
 
         # Perintah untuk membuat clear terminal
-        os.system('cls')
+        self.clear_screen()
 
         # Menampilkan daftar belanja yang telah diubah
         self.list_item()
@@ -263,7 +290,7 @@ class Transaction():
                 self.update_item_name()  # Kembali ke fungsi awal
                 break
             if tambah_barang == "tidak":
-                os.system('cls')  # Perintah untuk membuat clear terminal
+                self.clear_screen()  # Perintah untuk membuat clear terminal
                 self.list_item()
                 break
             else:
@@ -336,7 +363,7 @@ class Transaction():
         self.daftar_belanja[nama_barang][2] = total_harga_baru
 
         # Perintah untuk membuat clear terminal
-        os.system('cls')
+        self.clear_screen()
 
         # Menampilkan daftar belanja yang telah diubah
         self.list_item()
@@ -353,7 +380,7 @@ class Transaction():
                 self.update_item_qty()  # Kembali ke fungsi awal
                 break
             if tambah_barang == "tidak":
-                os.system('cls')  # Perintah untuk membuat clear terminal
+                self.clear_screen()  # Perintah untuk membuat clear terminal
                 self.list_item()
                 break
             else:
@@ -426,14 +453,14 @@ class Transaction():
         self.daftar_belanja[nama_barang][2] = total_harga_baru
 
         # Perintah untuk membuat clear terminal
-        os.system('cls')
+        self.clear_screen()
 
         # Menampilkan daftar belanja yang telah diubah
         self.list_item()
 
         # Menampilkan barang yang telah diubah harganya
         print(f"Perubahan harga untuk nama barang '{nama_barang}' berhasil! "
-              f"harga diubah menjadi Rp.{harga_barang_baru}")
+              f"Harga diubah menjadi Rp.{harga_barang_baru}")
 
         # Menanyakan ke pengguna apakah ingin mengubah harga barang yang lain
         while True:
@@ -443,7 +470,7 @@ class Transaction():
                 self.update_item_price()  # Kembali ke fungsi awal
                 break
             if tambah_barang == "tidak":
-                os.system('cls')  # Perintah untuk clear terminal
+                self.clear_screen()  # Perintah untuk clear terminal
                 self.list_item()
                 break
             else:
@@ -491,7 +518,7 @@ class Transaction():
         self.daftar_belanja.pop(nama_barang)
 
         # Perintah untuk membuat clear terminal
-        os.system('cls')
+        self.clear_screen()
 
         # Menampilkan daftar belanja yang telah diubah
         self.list_item()
@@ -507,7 +534,7 @@ class Transaction():
                 self.delete_item()  # kembali ke fungsi awal
                 break
             if tambah_barang == "tidak":
-                os.system('cls')  # Perintah untuk clear terminal
+                self.clear_screen()  # Perintah untuk clear terminal
                 self.list_item()
                 break
             else:
@@ -538,13 +565,13 @@ class Transaction():
         # Menanyakan kepada pengguna apakah yakin ingin mengapus semua barang
         while True:
             konfirmasi = input(
-                "Apakah anda yakin untuk menghapus semua daftar belanja? (Ya/Tidak)")
+                "Apakah anda yakin untuk menghapus semua daftar belanja? (Ya/Tidak)").lower()
             if konfirmasi == "ya":
                 # Perintah menghapus seluruh data dalam daftar belanja
                 self.daftar_belanja.clear()
 
                 # clear terminal
-                os.system('cls')
+                self.clear_screen()
 
                 # Menampilkan proses penghapusan seluruh barang berhasil
                 print("Semua barang dalam daftar belanja telah dihapus!")
