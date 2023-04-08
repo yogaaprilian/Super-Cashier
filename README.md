@@ -291,7 +291,7 @@ Beberapa kemungkinan pengembangan program Super Cashier di masa depan meliputi:
 
 4. __Laporan penjualan__: Program dapat dilengkapi dengan fitur laporan penjualan untuk membantu pemilik toko memantau penjualan dan menganalisis data penjualan secara lebih mudah dan efisien, sehingga dapat membantu dalam pengambilan keputusan bisnis yang lebih baik.
 
-Selain pengembangan program yang telah disebutkan sebelumnya, program yang telah dibuat ini membutuhkan saran perbaikan agar dapat menjadi lebih baik. Apabila Anda memiliki waktu, mohon dapat memberikan masukan guna meningkatkan kualitas program ini. Terima kasih
+Selain pengembangan program yang telah disebutkan sebelumnya, program yang telah dibuat ini membutuhkan saran perbaikan agar dapat menjadi lebih baik. Apabila anda berkenan, saya mengharapkan masukan dari Anda untuk meningkatkan kualitas program ini. Terima kasih
 
 ### Informasi Penggunaan
 
