@@ -1,6 +1,6 @@
 # Python Project: Super-Cashier
 
-## Latar Belakang _Project_:
+## Latar Belakang _Project_
 
 __Super Cashier__ merupakan program sederhana yang dapat digunakan para pelanggan untuk melakukan transaksi belanja di supermarket. Program ini menggunakan bahasa pemrograman `Python` yang dijalankan sesuai fungsi dasar mesin kasir sehingga para pelanggan dapat melakukan proses belanja secara mandiri atau _self-service_.
 
@@ -10,7 +10,7 @@ Program ini dibuat dengan mempertimbangkan beberapa hal:
 2. Supaya dapat memenuhi kebutuhan pelanggan yang berada di luar kota, supermarket perlu memiliki program dengan fitur-fitur yang dapat membantu menyelesaikan masalah mereka.
 3. Untuk menjangkau lebih banyak pelanggan dan meningkatkan kepuasan mereka, dibutuhkan program yang memungkinkan pelanggan memasukkan item, jumlah, dan harga belanjaan mereka, serta fitur lainnya.
 
-## _Feature Requirements_:
+## _Feature Requirements_
 
 Berdasarkan latar belakang diatas, kita dapat membuat suatu solusi yaitu dengan membuat program yaitu __Super Cashier__. Program Super Cashier memiliki beberapa fitur yang diinginkan, antara lain:
 1. Pelanggan dapat melakukan belanja dengan memanggil `class Transaction()`.
