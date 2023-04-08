@@ -296,3 +296,5 @@ Selain pengembangan program yang telah disebutkan sebelumnya, program yang telah
 ### Informasi Penggunaan
 
 Untuk menggunakan program ini, Anda dapat membuka file `menu.py` dan menjalankan program melalui terminal atau konsol.
+
+Jika ingin menjalankan program pada __Jupyter Notebook__, Anda bisa mengunduh file `menu.py`, `super_cashier.py`, dan `Super_Cashier.ipynb`, kemudian menempatkannya dalam satu folder. Setelah itu, Anda dapat menjalankan file `Super_Cashier.ipynb` melalui __Jupyter Notebook__.
