@@ -25,7 +25,7 @@ Berdasarkan latar belakang diatas, kita dapat membuat suatu solusi yaitu dengan 
    - Jika total harga belanja pelanggan __di atas Rp. 300.000__, maka pelanggan akan mendapatkan __potongan harga sebesar 8%__.
    - Jika total harga belanja pelanggan __di atas Rp. 500.000__, maka pelanggan akan mendapatkan __potongan harga sebesar 10%__.
 
-## Alur Program
+## Alur Program:
 
 <p align="center">
     <img src="https://user-images.githubusercontent.com/128567810/230119316-54c4466e-0f42-48ab-8755-50e53f818417.png" width="500">
