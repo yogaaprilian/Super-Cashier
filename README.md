@@ -28,7 +28,7 @@ Berdasarkan latar belakang diatas, kita dapat membuat suatu solusi yaitu dengan 
 ## Alur Program:
 
 <p align="center">
-    <img src="https://user-images.githubusercontent.com/128567810/230119316-54c4466e-0f42-48ab-8755-50e53f818417.png" width="500">
+    <img src="https://user-images.githubusercontent.com/128567810/230922064-0236d56b-1c61-4ed6-8e88-e749e6c578f8.png" width="500">
 </p>
 
 
