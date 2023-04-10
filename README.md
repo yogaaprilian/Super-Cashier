@@ -112,7 +112,7 @@ Pada _method_ ini, pelanggan diminta untuk memasukkan `nama_barang` yang ingin d
 https://github.com/yogaaprilian/Super-Cashier/blob/bf8c84e55002a384de150800158ae973cf78c7b4/super_cashier.py#L300-L389
 
 #### 7. Method `update_item_price()`
-Merupakan _method_ yang digunakan untuk mengubah harga per barang jika terjadi kesalahan input harga barang dan pelanggan ingin mengubah jumlah barang tersebut.
+Merupakan _method_ yang digunakan untuk mengubah harga per barang jika terjadi kesalahan input harga barang dan pelanggan ingin mengubah harga barang tersebut.
 
 Pada method ini pelanggan diminta untuk memasukkan `nama_barang` yang ingin diubah dan `harga_barang_baru` sebagai parameter untuk mengubah harga per barang pada daftar belanja.
 
@@ -172,7 +172,7 @@ Berikut merupakan program yang digunakan dalam bagian ini:
 
 https://github.com/yogaaprilian/Super-Cashier/blob/bf8c84e55002a384de150800158ae973cf78c7b4/menu.py#L11-L47
 
-#### 2. Pemanggil Method `class Transaction()`
+#### 2. Pemanggil Method pada `class Transaction()`
 
 Bagian pemrograman ini berisi fungsi-fungsi yang akan dipanggil pada bagian fungsi `main_menu()`, `second_menu()`, dan `modify_menu()`. 
 
