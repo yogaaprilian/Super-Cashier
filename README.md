@@ -8,7 +8,7 @@ __Super Cashier__ merupakan program sederhana yang dapat digunakan para pelangga
 Program ini dibuat dengan mempertimbangkan beberapa hal:
 1. Belanja di supermarket saat ramai akan membuat antrian di kasir semakin panjang, sehingga memaksa semua pembeli menunggu lama untuk melakukan pembayaran di kasir.
 2. Supaya dapat memenuhi kebutuhan pelanggan yang berada di luar kota, supermarket perlu memiliki program dengan fitur-fitur yang dapat membantu menyelesaikan masalah mereka.
-3. Untuk menjangkau lebih banyak pelanggan dan meningkatkan kepuasan mereka, dibutuhkan program yang memungkinkan pelanggan memasukkan item, jumlah, dan harga belanjaan mereka, serta fitur lainnya.
+3. Untuk menjangkau lebih banyak pelanggan dan meningkatkan kepuasan pelanggan, dibutuhkan program yang memungkinkan pelanggan memasukkan item, jumlah, dan harga belanjaan, serta fitur lainnya.
 
 ## _Feature Requirements_
 
